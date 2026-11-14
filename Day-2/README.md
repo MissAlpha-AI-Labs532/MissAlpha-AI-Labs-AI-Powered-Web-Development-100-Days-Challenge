@@ -1,4 +1,4 @@
-< HEAD
+
 # Stayora — Interactive Frontend Starter
 
 Premium responsive hotel marketplace frontend built with React + Vite.
