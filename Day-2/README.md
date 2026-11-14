@@ -1,29 +1,160 @@
+# STAYORA — AI-Powered Hotel Booking Platform
 
-# Stayora — Interactive Frontend Starter
+A premium, responsive hotel marketplace frontend built with **React and Vite**.
 
-Premium responsive hotel marketplace frontend built with React + Vite.
+STAYORA is an AI-powered hotel booking platform designed to simplify hotel discovery, comparison, and booking through an intuitive and responsive user experience.
 
-## Run locally
+## Features
+
+### Hotel Discovery
+- Search hotels by destination, check-in and check-out dates, and guest count.
+- Filter properties by price, rating, and property type.
+- Sort hotels by price and rating.
+- View detailed hotel information.
+
+### Wishlist Management
+- Save and remove favourite hotels.
+- Persist wishlist data using browser localStorage.
+
+### Booking Experience
+- Validate hotel stay dates.
+- Submit local demo booking requests.
+- View estimated booking price breakdowns.
+- Access locally saved booking requests at `/account/bookings`.
+
+### AI Hotel Finder
+- Explore the AI Finder demonstration.
+- Match hotels using sample-data matching rules.
+
+### User Experience
+- Responsive navigation.
+- Login and registration interface.
+- Mobile-friendly layouts.
+- Interactive animations and modern UI components.
+
+## Technology Stack
+
+- React
+- Vite
+- JavaScript
+- CSS
+- Browser localStorage
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/productassociate-sketch/stayora-frontend.git
+```
+
+Navigate into the project:
+
+```bash
+cd stayora-frontend
+```
+
+Install dependencies:
+
 ```bash
 npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-## Working frontend demo flows
-- Search hotels by destination, dates and guest count.
-- Filter by price, rating and property type; sort by price/rating.
-- Save and remove wishlist hotels (persisted in browser localStorage).
-- Open hotel details and validate stay dates.
-- Complete a local demo booking request and see an estimated price breakdown.
-- View locally saved booking requests and wishlist at `/account/bookings`.
-- Try the AI finder demo with sample-data matching.
-- Responsive navigation, login/register UI, motion and mobile layouts.
+The application will be available at the local URL displayed in your terminal.
 
-## Important limitations
-This is a functional frontend demonstration, not a live booking marketplace. Hotel data is sample data. Demo booking requests and wishlist are stored in the current browser only. No real hotel inventory is checked, no payment is taken, and login/register do not authenticate users. AI Finder uses basic matching rules, not an AI model.
+### Production Build
 
-Before commercial launch, connect the app to a Django REST Framework backend for authentication, real hotel inventory, atomic booking holds, payment gateway verification, refunds, partner dashboards and AI endpoints. Never treat a local demo booking as a confirmed reservation.
-=======
-# stayora-frontend
-STAYORA – AI-powered hotel booking platform frontend built with React and Vite.
->>>>>>> origin/main
+Generate the production build:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```text
+stayora/
+├── public/
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── pages/
+│   ├── store/
+│   ├── styles/
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
+
+## Backend Integration
+
+STAYORA is designed to integrate with a Django REST Framework backend.
+
+Planned backend integrations include:
+
+- User registration and authentication.
+- Real hotel inventory and availability.
+- Booking management and atomic booking holds.
+- Payment gateway verification.
+- Refund management.
+- Hotel partner dashboards.
+- AI-powered hotel discovery and recommendation endpoints.
+
+## Current Demo Limitations
+
+**This is a functional frontend demonstration, not a live booking marketplace.**
+
+- Hotel information is based on sample data.
+- Demo bookings are stored locally in the browser.
+- Wishlist data is stored in browser localStorage.
+- No real hotel inventory or availability is checked.
+- No actual payments are processed.
+- Login and registration interfaces do not currently authenticate users.
+- AI Finder uses basic matching rules rather than a live AI model.
+
+A local demo booking must never be treated as a confirmed hotel reservation.
+
+## Security and Production Readiness
+
+Before commercial launch:
+
+- Implement secure backend authentication.
+- Connect real hotel inventory and availability APIs.
+- Implement atomic booking holds.
+- Integrate and verify payment gateway transactions.
+- Configure secure environment variables.
+- Implement refund workflows.
+- Add appropriate backend validation and authorization.
+
+Never expose API keys, passwords, or secret credentials in frontend code or GitHub.
+
+## Repository
+
+**GitHub:** https://github.com/productassociate-sketch/stayora-frontend
+
+## Brand
+
+**STAYORA — Your Stay, Smarter.**
